@@ -13,9 +13,8 @@ const t	&max(const t &a, const t &b)
 template <typename t>
 void	swap(t &a, t &b)
 {
-	t	temp;
+	t	temp = a;
 
-	temp = a;
 	a = b;
 	b = temp;
 	return ;
