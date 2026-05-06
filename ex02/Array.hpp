@@ -6,7 +6,7 @@
 /*   By: kalhanaw <kalhanaw@student.42berlin.de>    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2026/05/06 16:03:15 by kalhanaw          #+#    #+#             */
-/*   Updated: 2026/05/06 16:03:16 by kalhanaw         ###   ########.fr       */
+/*   Updated: 2026/05/06 16:10:30 by kalhanaw         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -31,8 +31,8 @@ class Array
 			t				*getPointer() const;
 
 	private:
-		t				*_array;
 		unsigned int	_size;
+		t				*_array;
 };
 
 # include "Array.tpp"
