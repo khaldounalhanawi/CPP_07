@@ -7,6 +7,11 @@ void	hey(int &i)
 	i = 0;
 }
 
+void	heyConst(const int &i)
+{
+	std::cout << i << std::endl;
+}
+
 void	heyChar(char &c)
 {
 	std::cout << c << std::endl;
@@ -33,6 +38,16 @@ int	main()
 	std::cout << "**************************\n";
 	for (int i = 0; i < 3; i ++)
 		std::cout << line[i] << "\n";
+	}
+	{std::cout << ">>3<<\n";
+
+	const int arr[4] = {3,2,1,5};
+
+	::iter (arr, 4, heyConst);
+
+	std::cout << "**************************\n";
+	for (int i = 0; i < 4; i ++)
+		std::cout << arr[i] << "\n";
 	}
 	return (0);
 }
